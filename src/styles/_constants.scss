@@ -1,0 +1,59 @@
+/* stylelint-disable  color-no-hex */
+
+// Minimum Spacing Unit
+$planck-length: 8px;
+
+// Application Colors
+$color-aqua: #00c2ac;
+$color-black-absolute: #000;
+$color-black: #323946;
+$color-blue-light: #dfeafd;
+$color-blue: #2980b9;
+$color-gray-dark: #7f8c8d;
+$color-gray-light: #eaedf2;
+$color-gray-medium: #ccc;
+$color-green-primary: #91d000;
+$color-green-secondary: #49670e;
+$color-orange: #e98200;
+$color-pink: #da007e;
+$color-purple: #a337c8;
+$color-white-arctic: #f4f3ef;
+$color-white: #fff;
+
+// Font Families
+$font-stack: 'Roboto', sans-serif;
+
+// Font Sizes
+$font-size-large: 22px;
+$font-size-regular: 16px;
+$font-size-small: 12px;
+
+// Breakpoints
+$breakpoint-small: 576px;
+$breakpoint-medium: 768px;
+$breakpoint-large: 992px;
+$breakpoint-extra-large: 1200px;
+
+// Container Maximum Widths
+$max-width-small: 540px;
+$max-width-medium: 720px;
+$max-width-large: 960px;
+$max-width-extra-large: 1140px;
+
+// Padding
+$padding-small: $planck-length;
+$padding-large: #{2 * $planck-length};
+
+// Header Styling
+$header-height: #{$planck-length * 6};
+
+// Footer Styling
+$footer-height: #{$planck-length * 8};
+
+// Z-Indices
+$z-index-loading-indicator: 99999;
+$z-index-modal: 99998;
+$z-index-header: 99997;
+
+// Border Radices
+$border-radius-default: 5px;

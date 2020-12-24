@@ -188,7 +188,7 @@
         "selector-attribute-operator-space-before": "always",
         "selector-attribute-quotes": "always",
         "selector-class-pattern": [
-            "^([a-zA-Z]+(\\-[a-zA-Z]+)*)((\\_\\_[a-zA-Z]+(\\-[a-zA-Z]+)*(\\-\\-[a-zA-Z]+(\\-[a-zA-Z]+)*)?)?|(\\-\\-[a-zA-Z]+(\\-[a-zA-Z]+)*)?)?$",
+            "^([a-zA-Z]+(\\-[a-zA-Z]+)*)((\\_\\_[a-zA-Z]+(\\-[a-zA-Z]+)*(\\-\\-[a-zA-Z0-9]+(\\-[a-zA-Z0-9]+)*)?)?|(\\-\\-[a-zA-Z0-9]+(\\-[a-zA-Z0-9]+)*)?)?$",
             {
                 "message": "Class name should follow BEM notation: ReactComponent__some-element--and-modifier",
                 "resolveNestedSelectors": true

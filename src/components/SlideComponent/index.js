@@ -7,8 +7,11 @@ import './styles.scss';
 const SlideComponent = (props) => {
     const {
         backgroundImage,
+        character,
+        characterLocation,
         className,
-        orientation
+        orientation,
+        text
     } = props;
 
     const {
@@ -25,14 +28,23 @@ const SlideComponent = (props) => {
         `${displayName}__scene--oriented-${orientation}`
     );
 
+    const characterClassNames = classNames(
+        `${displayName}__character`,
+        `${displayName}__character--${characterLocation}`
+    );
+
     return (
         <div className={componentClassNames}>
             <div className={`${displayName}__text-block`}>
                 <p className={`${displayName}__text`}>
-                    {'Elit aute velit aliquip labore dolore aute officia cupidatat. Veniam cupidatat tempor anim elit culpa mollit consequat enim sint. Do aliqua velit ex ad sint incididunt ex exercitation consequat eu minim adipisicing consectetur ut.'}
+                    {text}
                 </p>
             </div>
             <div className={sceneClassNames}>
+                <img
+                    className={characterClassNames}
+                    src={character}
+                />
                 <img
                     className={`${displayName}__background-image`}
                     src={backgroundImage}
@@ -46,14 +58,20 @@ SlideComponent.displayName = 'SlideComponent';
 
 SlideComponent.propTypes = {
     backgroundImage: PropTypes.string,
+    character: PropTypes.string,
+    characterLocation: PropTypes.number,
     className: PropTypes.string,
-    orientation: PropTypes.string
+    orientation: PropTypes.string,
+    text: PropTypes.string
 };
 
 SlideComponent.defaultProps = {
     backgroundImage: '',
+    character: '',
+    characterLocation: 3,
     className: '',
-    orientation: 'center'
+    orientation: 'center',
+    text: ''
 };
 
 export default SlideComponent;
